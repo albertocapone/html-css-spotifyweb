@@ -40,24 +40,42 @@
   background-color: lightblue;
 }
 
-.bacheca{
-  position: relative;
-  width: calc(100% - 250px);
-  height: calc(100% - 100px);
-  background-color: lightgreen;
-  z-index: 997;
-  display: flex;
-}
+/* sezione bacheca */
+    .bacheca{
+      position: relative;
+      width: calc(100% - 250px);
+      height: calc(100% - 100px);
+      background-color: lightgreen;
+      z-index: 997;
+      display: flex;
+      flex-direction: column;
+      overflow-y: scroll;
+    }
 
-.bacheca .upgradebar{
-  width: calc(100% - 250px);
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  left: 250px;
-  z-index: 2;
-}
+        .bacheca .upgradebar{
+          width: calc(100% - 250px);
+          height: 80px;
+          background-color: rgba(0, 0, 0, 0.5);
+          position: fixed;
+          top: 0;
+          left: 250px;
+          z-index: 2;
+        }
+
+    .bacheca_nav{
+      width: 60%;
+      min-height: 40px;
+      align-self: center;
+      margin-top: 80px;
+    }
+
+    .bacheca > div:not(.upgradebar){
+      width: 100%;
+      min-height: 160px;
+      margin-top: 20px;
+    }
+/*  */
+
 
 .player{
   width: 100%;
