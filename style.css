@@ -246,8 +246,9 @@ img{
 
 /* sezione player */
 .player *{
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
+
 .player{
   width: 100%;
   height: 100px;
@@ -257,16 +258,38 @@ img{
   left: 0;
   z-index: 1;
   display: flex;
+    color: white;
 }
     /*  */
     .player > .now_playing{
       flex: 1;
       display: flex;
+      align-items: center;
+      padding-left: 10px;
     }
         .now_playing > *{
-          flex: 1;
           height: 70%;
         }
+
+        .now_playing > img{
+          width: auto;
+        }
+        .now_playing > .intestazione{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0 10px;
+        }
+        .now_playing > .preferiti{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 25px;
+        }
+
+            .preferiti .far{
+              padding: 5px;
+            }
 
     /*  */
     .player > .playbar{
@@ -277,15 +300,56 @@ img{
 
         .playbar > .commands{
         align-self: center;
-        width: 50%;
+        width: 40%;
+        min-width: 100px;
         height: 60%;
         display: flex;
         }
 
+            .commands > *{
+              flex: 1;
+              text-align: center;
+              font-size: 15px;
+              padding-top: 25px;
+            }
+
+            .commands > .play{
+              font-size: 30px;
+              padding-top: 15px;
+            }
+
 
         .playbar > .progression{
           height: 40%;
+          display: flex;
         }
+            .progression > .elapsed{
+              flex: 1;
+              height: 15px;
+              font-size: 80%;
+              text-align: center;
+            }
+
+            .progression > .bar{
+              flex: 7;
+              height: 5px;
+              margin-top: 5px;
+              border-radius: 5px;
+              background-color: #535353;
+            }
+                  .bar > .progression_elapsed{
+                    width: 25%;
+                    height: 100%;
+                    background-color: #bababa;
+                  }
+
+            .progression > .remaining{
+              flex: 1;
+              height: 15px;
+              font-size: 80%;
+              text-align: center;
+            }
+
 
 
     /*  */
@@ -293,18 +357,47 @@ img{
       flex: 1;
       display: flex;
       justify-content: flex-end;
+      align-items: center;
+      padding-right: 10px;
     }
 
         .audio > .varie{
           width: 70%;
           height: 70%;
+          display: flex;
+          align-items: center;
         }
+            .varie > *{
+              flex: 1;
+              text-align: center;
+            }
 
+            .varie > .volume{
+              flex: 5;
+              display: flex;
+            }
+                .volume > *{
+                  flex: 1;
+                }
+
+                .volume > .bar{
+                  flex: 4;
+                  height: 5px;
+                  margin-top: 5px;
+                  border-radius: 5px;
+                  background-color: #535353;
+                }
+
+                    .bar > .volume_level{
+                      width: 25%;
+                      height: 100%;
+                      background-color: #b4b4b4;
+                    }
 /*  */
 
 
 
-/* media quaery */
+/* media query */
 
 @media screen and (max-height:500px){
 .sidenav > .account{
