@@ -173,6 +173,9 @@ img{
 /*  */
 
 /* sezione bacheca */
+    .bacheca *{
+      /* border: 1px solid white; */
+    }
     .bacheca{
       position: relative;
       width: calc(100% - 250px);
@@ -204,10 +207,10 @@ img{
 
     .bacheca_menu{
       align-self: center;
-      margin-top: 80px;
+      margin-top: 70px;
       width: 55%;
       color: #76787e;
-      min-height: 40px;
+      min-height: 100px;
       display: flex;
       align-items: center;
       flex-wrap: wrap;
@@ -215,7 +218,7 @@ img{
     }
 
     .bacheca_menu li{
-      font-size: 10px;
+      font-size: 80%;
     }
 
     .bacheca > section{
@@ -238,9 +241,16 @@ img{
     .bacheca > section > article{
       width: calc(100% / 6);      /* width: calc(100% / 4); per breakp minori desk*/
       min-height: 120px;
-      padding: 5px;
+      padding: 15px 5px;
     }
 
+.popular img{
+  border-radius: 100%;
+}
+
+article > h3, article > h5{
+  text-align: center;
+}
 /*  */
 
 
