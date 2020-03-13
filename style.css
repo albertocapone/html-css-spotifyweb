@@ -182,7 +182,9 @@ img{
   width: 90%;
 }
 
-
+.sidenav-content-xs{
+  display: none;
+}
 /*  */
 
 /* sezione bacheca */
@@ -442,17 +444,86 @@ article > h3, article > h5{
 
 /* xs */
 @media screen and (max-width:480px){
+  .hidden-xs{
+    display: none;
+  }
+  /* sidenav */
   .sidenav{
-    width: 80px;
+    width: 40px;
   }
 
+  .sidenav *{
+    /* border: 1px solid white; */
+  }
+
+  .sidenav-content-xs{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+  }
+      .sidenav-content-xs > img{
+        width: 100%;
+        height: auto;
+        padding: 0 5px;
+      }
+
+      .sidenav-content-xs > .home-xs{
+        display: flex;
+        flex-direction: column;
+      }
+
+          .home-xs > *{
+          flex: 1;
+          padding: 2px 2px;
+          }
+
+
+      .sidenav-content-xs > .account-xs{
+          background-color: black;
+          height: 50px;
+          width: 40px;
+          position: fixed;
+          bottom: 100px;
+          left: 0;
+          z-index: 1000;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 10px;
+      }
+
+          .account-xs > *{
+            flex: 1;
+          }
+
+          .account-xs > img{
+              background-color: #999999;
+              width: 60%;
+              border-radius: 100%;
+          }
+
+
+              @media screen and (max-height:540px){
+              .sidenav-content-xs > .account-xs{
+                position: relative;
+                top: 207px;
+                left: 0;
+              }
+}
+
+
+  /* end sidenav */
+
   .bacheca{
-    width: calc(100% - 80px);
+    width: calc(100% - 40px);
   }
 
   .bacheca .upgradebar{
-    width: calc(100% - 80px);
-    left: 80px;
+    width: calc(100% - 40px);
+    left: 40px;
   }
 
   .bacheca_menu{
@@ -492,7 +563,6 @@ article > h3, article > h5{
 
 /* s */
 @media screen and (min-width:481px) and (max-width:768px){
-
   .bacheca_menu{
     width: 90%;
   }
