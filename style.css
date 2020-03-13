@@ -51,7 +51,6 @@ img{
   background-color: black;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   overflow-y: hidden;
   color: #999999;
 }
@@ -73,7 +72,7 @@ img{
 
 .home{
   margin-top: 10px;
-  min-height: 70px;
+  min-height: 89px;
   max-height: calc(20% - 160px);
 }
 
@@ -88,8 +87,8 @@ img{
 }
 
 .playlist{
-  margin-top: 20px;
-  min-height: 295px;
+  margin-top: 10px;
+  min-height: 336px;
   max-height: calc(70% - 160px);
 }
 
@@ -118,44 +117,58 @@ img{
 
 .create h4{
   width: calc(99% - 35px);
-  height: 40px;
+  height: 20px;
   display: inline-block;
   vertical-align: middle;
+  align-self: center;
 }
 
 
 .playlist ul{
-  /* border: 1px solid red; */
-  height: 75%;
+  height: 74%;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
 }
 
 .playlist li{
-  padding: 9px;
+  padding: 11px;
 }
 
 
 .sidenav > .account{
   background-color: black;
-  min-height: 70px;
-  width: 232px;
+  height: 70px;
+  width: 231px;
   position: fixed;
   bottom: 100px;
   left: 18px;
   z-index: 1000;
 }
 
+.account > .app{
+  position: relative;
+  height: 43px;
+}
+
 .account span{
   display: inline-block;
-  width: 90%;
+  width: 100%;
   border-bottom: 1px solid #666666;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
+  padding-left: 25px;
+}
+
+.account i{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .profile{
+  height: 27px;
   display: flex;
+  align-items: center;
 }
 
 .profile img{
@@ -409,14 +422,13 @@ article > h3, article > h5{
 
 /* media query */
 
-@media screen and (max-height:500px){
+@media screen and (max-height:540px){
 .sidenav > .account{
   position: relative;
-  bottom: 126px;
+  bottom: 135px;
   left: 18px;
 }
 }
-
 
 @media screen and (max-width:640px){
   .sidenav{
