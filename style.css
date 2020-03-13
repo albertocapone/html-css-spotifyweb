@@ -23,6 +23,15 @@ ul{
   list-style-type: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: none; /* no underline */
+}
+
+a:hover{
+  color: white;
+}
+
 img{
   width: 100%;
 }
@@ -347,6 +356,7 @@ article > h3, article > h5{
           flex-direction: column;
           justify-content: center;
           padding: 0 10px;
+          font-size: 130%;
         }
         .now_playing > .preferiti{
           display: flex;
@@ -357,6 +367,11 @@ article > h3, article > h5{
 
             .preferiti .far{
               padding: 5px;
+              color: #757575;
+            }
+
+            .preferiti .far:hover{
+              color: white;
             }
 
     /*  */
