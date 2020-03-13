@@ -291,7 +291,8 @@ article > h3, article > h5{
   left: 0;
   z-index: 1;
   display: flex;
-    color: white;
+  color: white;
+  font-size: 59%;
 }
     /*  */
     .player > .now_playing{
@@ -333,21 +334,19 @@ article > h3, article > h5{
 
         .playbar > .commands{
         align-self: center;
-        width: 40%;
         min-width: 100px;
         height: 60%;
         display: flex;
+        justify-content: space-between;
         }
 
             .commands > *{
-              flex: 1;
-              text-align: center;
-              font-size: 15px;
+              font-size: 12px;
               padding-top: 25px;
             }
 
             .commands > .play{
-              font-size: 30px;
+              font-size: 24px;
               padding-top: 15px;
             }
 
@@ -366,7 +365,7 @@ article > h3, article > h5{
             .progression > .bar{
               flex: 7;
               height: 5px;
-              margin-top: 5px;
+              margin: 2.4px 3px;
               border-radius: 5px;
               background-color: #535353;
             }
@@ -374,6 +373,7 @@ article > h3, article > h5{
                     width: 25%;
                     height: 100%;
                     background-color: #bababa;
+                    border-radius: 5px;
                   }
 
             .progression > .remaining{
@@ -416,7 +416,7 @@ article > h3, article > h5{
                 .volume > .bar{
                   flex: 4;
                   height: 5px;
-                  margin-top: 5px;
+                  margin-top: 2.4px;
                   border-radius: 5px;
                   background-color: #535353;
                 }
@@ -463,6 +463,31 @@ article > h3, article > h5{
     width: calc(100% / 2);
     min-height: 120px;
   }
+
+  .player > .now_playing{
+    flex: 1;
+  }
+
+      .now_playing > .intestazione {
+        padding: 0px 7px;
+      }
+
+      .now_playing > .preferiti {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 5px 0 0;
+      }
+
+  .player > .playbar{
+    flex: 1;
+  }
+  .player > .audio{
+    flex: 1;
+  }
+
+  .audio > .varie{
+    width: 85%;
+  }
 }
 
 /* s */
@@ -476,6 +501,32 @@ article > h3, article > h5{
     width: calc(100% / 2);
     min-height: 120px;
   }
+
+  .player > .now_playing{
+    flex: 1;
+  }
+
+      .now_playing > .intestazione {
+        padding: 0px 7px;
+      }
+
+      .now_playing > .preferiti {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 5px 0 0;
+      }
+
+  .player > .playbar{
+    flex: 1;
+  }
+  .player > .audio{
+    flex: 1;
+  }
+
+  .audio > .varie{
+    width: 85%;
+  }
+
 }
 
 /* md */
@@ -488,5 +539,15 @@ article > h3, article > h5{
   .bacheca > section > article{
     width: calc(100% / 4);
     min-height: 120px;
+  }
+
+  .player > .now_playing{
+    flex: 1;
+  }
+  .player > .playbar{
+    flex: 1;
+  }
+  .player > .audio{
+    flex: 1;
   }
 }
