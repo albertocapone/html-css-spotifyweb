@@ -211,12 +211,21 @@ img{
           z-index: 2;
           display: flex;
           justify-content: flex-end;
+          align-items: center;
+          padding-right: 35px;
         }
 
-        /* .upgradebar a{
-          width: 20px;
-          min-height: 10px;
-        } */
+        .upgradebar a{
+          width: 177px;
+          height: 43px;
+          border: 1px solid white;
+          padding-top: 14px;
+          border-radius: 16px;
+          font-size: 11px;
+          color: white;
+          text-decoration-line: none;
+          text-align: center;
+        }
 
     .bacheca_menu{
       align-self: center;
