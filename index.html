@@ -13,35 +13,38 @@
 
     <div class="wrapper">
 
-      <!-- sidenav -->
+      <!-- macroblocco sidenav -->
       <nav class="sidenav">
         <!-- logo -->
         <img class="hidden-xs" id="spotify" src="img/logo.svg" alt="">
-
+        <!-- sottosezione home -->
           <section class="home hidden-xs">
             <ul>
               <li class="selected">
                 <a href="#">
                     <img src="img/home.svg" alt="">
-                    <span>Home</span></li>
+                    <span>Home</span>
                 </a>
+              </li>
               <li>
                 <a href="#">
                   <img src="img/search.svg" alt="">
-                  <span>Cerca</span></li>
+                  <span>Cerca</span>
                 </a>
+              </li>
               <li>
                 <a href="#">
                   <img src="img/libreria.svg" alt="">
-                  <span>La tua libreria</span></li>
+                  <span>La tua libreria</span>
                 </a>
+              </li>
             </ul>
           </section>
-
+          <!-- sottosezione playlist -->
           <section class="playlist hidden-xs">
             <h3>PLAYLIST</h3>
             <a href="#">
-              <div class="create">
+              <div class="create_yours">
                 <div>&plus;</div>
                 <h4>Crea playlist</h4>
               </div>
@@ -71,8 +74,9 @@
             </ul>
           </section>
 
+          <!-- sottosezione account -->
           <section class="account hidden-xs">
-            <div class="app">
+            <div class="get_app">
               <a href="#">
                 <i class="fas fa-arrow-circle-down"></i>
                 <span>Installa app</span>
@@ -84,32 +88,41 @@
             </div>
           </section>
 
+          <!-- sottosezione xs -->
           <section class="sidenav-content-xs">
             <img src="img/logo-small.svg" alt="">
-
+            <!-- xs: sottosezione home -->
             <section class="home-xs">
-              <a href="#"><img src="img/home.svg" alt=""></a>
-              <a href="#"><img src="img/search.svg" alt=""></a>
-              <a href="#"><img src="img/libreria.svg" alt=""></a>
+              <a href="#">
+                <img src="img/home.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/search.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/libreria.svg" alt="">
+              </a>
             </section>
-
+            <!-- xs: sottosezione account -->
             <section class="account-xs">
               <i class="fas fa-arrow-circle-down"></i>
               <img src="img/profile.svg" alt="">
             </section>
-
           </section>
+
       </nav>
-      <!--  -->
+      <!-- end macroblocco sidenav  -->
 
 
-      <!-- sezione bacheca -->
+      <!-- macroblocco bacheca -->
       <section class="bacheca">
 
+        <!-- barra superiore -->
         <div class="upgradebar">
           <a href="#">EFFETTUA L&apos;UPGRADE</a>
         </div>
 
+        <!-- menu -->
         <ul class="bacheca_menu">
           <li class="selected">
             <a href="#">IN EVIDENZA</a>
@@ -134,9 +147,11 @@
         <!-- sottosezione recently played -->
         <section class="recently">
 
+          <!-- intestazione -->
           <h2>Recently played</h2>
 
-          <article class="">
+          <!-- album -->
+          <article>
             <div class="cover">
               <img src="img/metal.jpg" alt="">
               <div class="layover">
@@ -147,7 +162,7 @@
             <h5>Subtitle</h5>
           </article>
 
-          <article class="">
+          <article>
             <div class="cover">
               <img src="img/stranger.jpeg" alt="">
               <div class="layover">
@@ -158,7 +173,7 @@
             <h5>Kyle Dixon & Michael Stein</h5>
           </article>
 
-          <article class="">
+          <article>
             <div class="cover">
               <img src="img/aquietplace.jpeg" alt="">
               <div class="layover">
@@ -169,7 +184,7 @@
             <h5>Subtitle</h5>
           </article>
 
-          <article class="">
+          <article>
             <div class="cover">
               <img src="img/split.jpeg" alt="">
               <div class="layover">
@@ -180,7 +195,7 @@
             <h5>Subtitle</h5>
           </article>
 
-          <article class="">
+          <article>
             <div class="cover">
               <img src="img/cure.jpeg" alt="">
               <div class="layover">
@@ -191,7 +206,7 @@
             <h5>Subtitle</h5>
           </article>
 
-          <article class="">
+          <article>
             <div class="cover">
               <img src="img/sinister.jpeg" alt="">
               <div class="layover">
@@ -201,15 +216,17 @@
             <h3>Sinister</h3>
             <h5>Subtitle</h5>
           </article>
-
         </section>
 
         <!-- sottosezione personal -->
         <section class="personal">
+
+          <!-- intestazione -->
           <h2>Creato per John Doe</h2>
           <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
 
-          <article class="">
+          <!-- album -->
+          <article>
             <div class="cover">
               <img src="img/radar.jpeg" alt="">
               <div class="layover">
@@ -219,7 +236,7 @@
             <h3>Release Radar</h3>
           </article>
 
-          <article class="">
+          <article>
             <div class="cover">
               <img src="img/mixdaily.jpeg" alt="">
               <div class="layover">
@@ -232,10 +249,13 @@
 
         <!-- sottosezione popular -->
         <section class="popular">
+
+          <!-- intestazione -->
           <h2>Artisti più popolari</h2>
           <h5>Più ascolti, più accurati saranno i suggerimenti.</h5>
 
-          <article class="">
+          <!-- album -->
+          <article>
             <div class="cover">
               <img src="img/youg.jpeg" alt="">
               <div class="layover">
@@ -245,7 +265,7 @@
             <h3>Lana del Ray</h3>
           </article>
 
-          <article class="">
+          <article>
             <div class="cover">
               <img src="img/einaudi.jpeg" alt="">
               <div class="layover">
@@ -257,11 +277,16 @@
         </section>
 
       </section>
-      <!--  -->
+      <!--end macroblocco bacheca  -->
 
+      <!-- macroblocco player -->
       <section class="player">
+
+        <!-- player: now playing -->
         <div class="now_playing">
+
           <img src="img/split.jpeg" alt="">
+
           <div class="intestazione">
             <a href="#">
               <h5>Split</h5>
@@ -270,6 +295,7 @@
               <h6>Brano Nome</h6>
             </a>
           </div>
+
           <div class="preferiti">
             <a href="#">
               <i class="far fa-heart"></i>
@@ -280,7 +306,9 @@
           </div>
         </div>
 
+        <!-- player: playbar -->
         <nav class="playbar">
+
           <div class="commands">
             <i class="fas fa-random"></i>
             <i class="fas fa-step-backward"></i>
@@ -288,12 +316,11 @@
             <i class="fas fa-step-forward"></i>
             <i class="fas fa-redo-alt"></i>
           </div>
+
           <div class="progression">
             <div class="elapsed">0:25</div>
             <div class="bar">
-              <div class="progression_elapsed">
-
-              </div>
+              <div class="progression_elapsed"></div>
             </div>
             <div class="remaining">4:35</div>
           </div>
@@ -307,16 +334,15 @@
               <i class="fas fa-volume-up"></i>
               <div class="bar">
                 <div class="volume_level"></div>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
       </section>
-      <!--  -->
+      <!-- end macroblocco player  -->
 
 
     </div>
-
-
   </body>
 
 

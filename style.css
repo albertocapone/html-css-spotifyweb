@@ -7,21 +7,15 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+ul{
+  list-style-type: none;
+}
+
     /* debug */
     body > .wrapper *{
       /* border: 1px solid black; */
     }
     /*  */
-
-.fix{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-ul{
-  list-style-type: none;
-}
 
 a {
   color: inherit;
@@ -31,10 +25,6 @@ a {
 a:hover{
   color: white;
 }
-
-img{
-  width: 100%;
-}
 /*  */
 
 
@@ -42,9 +32,6 @@ img{
 .wrapper{
   width: 100vw;
   height: 100vh;
-}
-
-.wrapper{
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -53,162 +40,167 @@ img{
 
 
 /* sidenav */
-.sidenav{
-  position: relative;
-  width: 250px;
-  height: calc(100% - 100px);
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  overflow-y: hidden;
-  color: #999999;
-}
+  /* regole generali */
+  .sidenav{
+    position: relative;
+    width: 250px;
+    height: calc(100% - 100px);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    color: #999999;
+  }
 
-.sidenav > *{
-  width: 100%;
-  padding: 0 10px;
-}
+  .sidenav > *{
+    width: 100%;
+    padding: 0 10px;
+  }
+      /* logo */
+      .sidenav > #spotify{
+        height: 60px;
+        width: 100%;
+        padding: 10px 35px 5px 0;
+      }
+      /*  */
 
-#spotify{
-  height: 60px;
-  width: 100%;
-  padding: 10px 35px 5px 0;
-}
+      /* sottosezione home */
+      .sidenav > .home{
+        margin-top: 10px;
+        min-height: 89px;
+        max-height: calc(20% - 160px);
+        padding: 0;
+      }
+          .home > ul{
+            width: 100%;
+            height: 100%;
+          }
+              .home li{
+                padding-left: 10px;
+              }
+                  .home img{
+                    width: 10%;
+                    margin-right: 1%;
+                  }
 
-.home{
-  margin-top: 10px;
-  min-height: 89px;
-  max-height: calc(20% - 160px);
-  padding: 0;
-}
+              /* effetto selezione li */
+              .home li.selected{
+                border-left: 3px solid greenyellow;
+              }
+      /*  */
 
-.home ul{
-  width: 100%;
-  height: 100%;
-}
+      /* sottosezione playlist */
+      .sidenav > .playlist{
+        margin-top: 10px;
+        min-height: 336px;
+        max-height: calc(70% - 160px);
+      }
 
-.home li{
-  padding-left: 10px;
-}
+          .playlist > h3{
+            height: 10%;
+            color: white;
+          }
 
-.home li.selected{
-  border-left: 3px solid greenyellow;
-}
+              .playlist .create_yours{
+                display: flex;
+                height: 15%;
+              }
 
-.home img{
-  width: 10%;
-  margin-right: 1%;
-}
+                  .create_yours > div{
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 1%;
+                    background-color: #999999;
+                    font-size: 35px;
+                    text-align: center;
+                    color: black;
+                  }
 
-.playlist{
-  margin-top: 10px;
-  min-height: 336px;
-  max-height: calc(70% - 160px);
-}
-
-.playlist h3{
-  height: 10%;
-  color: white;
-}
-
-
-.playlist .create{
-  display: flex;
-  height: 15%;
-}
-
-.create div{
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  margin-right: 1%;
-  background-color: #999999;
-  font-size: 35px;
-  text-align: center;
-  color: black;
-}
-
-
-.create h4{
-  width: calc(99% - 35px);
-  height: 20px;
-  display: inline-block;
-  vertical-align: middle;
-  align-self: center;
-}
-
-
-.playlist ul{
-  height: 74%;
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
-}
-
-.playlist li{
-  padding: 11px;
-}
+                  .create_yours > h4{
+                    width: calc(99% - 35px);
+                    height: 20px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    align-self: center;
+                  }
 
 
-.sidenav > .account{
-  background-color: black;
-  height: 70px;
-  width: 231px;
-  position: fixed;
-  bottom: 100px;
-  left: 18px;
-  z-index: 1000;
-}
+          .playlist > ul{
+            height: 74%;
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+          }
+              .playlist li{
+                padding: 11px;
+              }
+      /*  */
 
+      /* sottosezione account */
+      .sidenav > .account{
+        background-color: black;
+        height: 70px;
+        width: 231px;
+        position: fixed;
+        bottom: 100px;
+        left: 18px;
+        z-index: 1000;
+      }
 
-        @media screen and (max-height:540px){
-        .sidenav > .account{
-          position: relative;
-          bottom: 135px;
-          left: 18px;
-        }
-        }
+          .account > .get_app{
+            position: relative;
+            height: 43px;
+          }
+              .get_app i{
+                position: absolute;
+                top: 0;
+                left: 0;
+              }
 
-.account > .app{
-  position: relative;
-  height: 43px;
-}
+              .get_app span{
+                display: inline-block;
+                width: 100%;
+                border-bottom: 1px solid #666666;
+                margin-bottom: 24px;
+                padding-left: 25px;
+              }
 
-.account span{
-  display: inline-block;
-  width: 100%;
-  border-bottom: 1px solid #666666;
-  margin-bottom: 24px;
-  padding-left: 25px;
-}
+          .account > .profile{
+            height: 27px;
+            display: flex;
+            align-items: center;
+          }
 
-.account i{
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+              .profile img{
+                background-color: #999999;
+                width: 10%;
+                border-radius: 100%;
+                margin-right: 10px;
+              }
 
-.profile{
-  height: 27px;
-  display: flex;
-  align-items: center;
-}
+              .profile h4{
+                width: 90%;
+              }
+      /*  */
 
-.profile img{
-  background-color: #999999;
-  width: 10%;
-  border-radius: 100%;
-  margin-right: 10px;
-}
+      /* vertical slide effect */
+      @media screen and (max-height:540px){
+      .sidenav > .account{
+        position: relative;
+        bottom: 135px;
+        left: 18px;
+      }
+      }
+      /*  */
 
-.profile h4{
-  width: 90%;
-}
+      /* sidenav xs version */
+      .sidenav-content-xs{
+        display: none;
+      }
+      /*  */
 
-.sidenav-content-xs{
-  display: none;
-}
-/*  */
+/* end macroblocco sidenav */
 
 /* sezione bacheca */
     .cover{
@@ -221,7 +213,7 @@ img{
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      height: 97%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -247,6 +239,10 @@ img{
       display: flex;
       flex-direction: column;
       overflow-y: scroll;
+    }
+
+    .bacheca img{
+      width: 100%;
     }
 
         .bacheca .upgradebar{
@@ -507,10 +503,6 @@ article > h3, article > h5{
   /* sidenav */
   .sidenav{
     width: 40px;
-  }
-
-  .sidenav *{
-    /* border: 1px solid white; */
   }
 
   .sidenav-content-xs{
