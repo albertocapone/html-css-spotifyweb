@@ -25,6 +25,7 @@ a:hover{
 .wrapper{
   width: 100vw;
   height: 100vh;
+  padding-bottom: 100px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -37,7 +38,7 @@ a:hover{
   .sidenav{
     position: relative;
     width: 250px;
-    height: calc(100% - 100px);
+    height: 100%;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -225,7 +226,7 @@ a:hover{
     .bacheca{
       position: relative;
       width: calc(100% - 250px);
-      height: calc(100% - 100px);
+      height: 100%;
       background-color: #141922;
       color: white;
       z-index: 997;
@@ -333,6 +334,10 @@ article > h3, article > h5{
   width: 100%;
   height: 100px;
   background-color: #282828;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
   display: flex;
   color: white;
   font-size: 59%;
