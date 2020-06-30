@@ -6,9 +6,9 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-body, html {
-  width: 100%;
-  width: 100%;
+body {
+  width: 100vw;
+  height: 100vh;
 }
 
 ul{
@@ -28,9 +28,8 @@ a:hover{
 
 /* wrapper */
 .wrapper{
-  width: 100vw;
-  height: 100vh;
-  padding-bottom: 100px;
+  width: 100%;
+  height: 100%;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -43,7 +42,7 @@ a:hover{
   .sidenav{
     position: relative;
     width: 250px;
-    height: 100%;
+    height: calc(100% - 100px);
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -231,7 +230,7 @@ a:hover{
     .bacheca{
       position: relative;
       width: calc(100% - 250px);
-      height: 100%;
+      height: calc(100% - 100px);
       background-color: #141922;
       color: white;
       z-index: 997;
@@ -339,10 +338,6 @@ article > h3, article > h5{
   width: 100%;
   height: 100px;
   background-color: #282828;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
   display: flex;
   color: white;
   font-size: 59%;
@@ -502,8 +497,8 @@ article > h3, article > h5{
 
   .sidenav-content-xs{
     width: 100%;
-    height: 100%;
     display: flex;
+    height: calc(100% - 100px);
     flex-direction: column;
     justify-content: flex-start;
     padding: 0;
