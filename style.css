@@ -348,16 +348,17 @@ article > h3, article > h5{
 }
     /*  */
     .player > .now_playing{
-      flex: 1;
+     width: 30%;
       display: flex;
       align-items: center;
       padding-left: 10px;
     }
-        .now_playing > *{
+        /* .now_playing > *{
           height: 70%;
-        }
+        } */
 
         .now_playing > img{
+          height: 60%;
           width: auto;
         }
         .now_playing > .intestazione{
@@ -385,14 +386,14 @@ article > h3, article > h5{
 
     /*  */
     .player > .playbar{
-      flex: 2;
+     width: 40%;
       display: flex;
       flex-direction: column;
     }
 
         .playbar > .commands{
         align-self: center;
-        min-width: 100px;
+        width: 100px;
         height: 60%;
         display: flex;
         justify-content: space-between;
@@ -445,7 +446,7 @@ article > h3, article > h5{
 
     /*  */
     .player > .audio{
-      flex: 1;
+     width: 30%;
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -454,7 +455,7 @@ article > h3, article > h5{
 
         .audio > .varie{
           width: 70%;
-          height: 70%;
+          height: 69%;
           display: flex;
           align-items: center;
         }
@@ -648,8 +649,19 @@ article > h3, article > h5{
     flex: 1;
   }
 
+   .now_playing>img {
+     height: 30%;
+   }
+
   .now_playing>.intestazione {
     padding: 0px 7px;
+  }
+
+  .now_playing>.intestazione h5,
+  .now_playing>.intestazione h6
+    {
+    width: min-content;
+    font-weight: 100;
   }
 
   .now_playing>.preferiti {
@@ -658,16 +670,79 @@ article > h3, article > h5{
     padding: 0 5px 0 0;
   }
 
-  .player>.playbar {
-    flex: 1;
+  .preferiti .far {
+    padding: 2px;
+    font-size: 9px;
   }
 
-  .player>.audio {
-    flex: 1;
-  }
+   .player>.playbar {
+     width: 40%;
+     display: flex;
+     flex-direction: column;
+   }
+
+   .playbar>.commands {
+     /* align-self: center; */
+     width: 80px;
+     height: 50%;
+     display: flex;
+     justify-content: space-between;
+   }
+
+   .commands>* {
+     font-size: 9px;
+     padding-top: 25px;
+   }
+
+   .commands>.play {
+     font-size: 18px;
+     padding-top: 15px;
+   }
+
+
+   .playbar>.progression {
+     height: 50%;
+     display: flex;
+   }
+
+   .progression>.elapsed {
+     flex: 1;
+     height: 15px;
+     font-size: 80%;
+     text-align: center;
+   }
+
+   .progression>.bar {
+     flex: 5;
+     height: 5px;
+     margin: 2.4px 3px;
+     border-radius: 5px;
+     background-color: #535353;
+   }
+
+   .bar>.progression_elapsed {
+     width: 25%;
+     height: 100%;
+     background-color: #bababa;
+     border-radius: 5px;
+   }
+
+   .progression>.remaining {
+     flex: 1;
+     height: 15px;
+     font-size: 80%;
+     text-align: center;
+   }
 
   .audio>.varie {
-    width: 85%;
+    width: 86%;
+    font-size: 7px;
+  }
+
+  .volume>.bar {
+    flex: 4;
+    height: 3px;
+    margin-top: 1px;
   }
 }
 
