@@ -539,7 +539,6 @@ article > h3, article > h5{
   /* sidenav */
   .sidenav {
     width: 40px;
-    height: calc(100% - 100px);
   }
 
   .sidenav-content-xs {
@@ -554,19 +553,23 @@ article > h3, article > h5{
   .sidenav-content-xs>img {
     width: 100%;
     height: auto;
-    padding: 0 5px;
+    padding: 10px 5px;
   }
 
+  
   .sidenav-content-xs>.home-xs {
     display: flex;
     flex-direction: column;
   }
-
+  
   .home-xs>* {
     flex: 1;
-    padding: 2px 2px;
   }
-
+  
+  .home-xs img {
+    width: 80%;
+    padding: 5px 0 5px 5px;
+  }
 
   .sidenav-content-xs>.account-xs {
     background-color: black;
@@ -637,6 +640,10 @@ article > h3, article > h5{
     font-weight: 100;
   }
 
+  .now_playing>.intestazione h5 {
+    font-weight: 600;
+  }
+
   .now_playing>.preferiti {
     flex-direction: column;
     justify-content: center;
@@ -648,63 +655,25 @@ article > h3, article > h5{
     font-size: 9px;
   }
 
-   .player>.playbar {
-     width: 40%;
-     display: flex;
-     flex-direction: column;
-   }
-
    .playbar>.commands {
-     /* align-self: center; */
-     width: 80px;
+     width: 90px;
      height: 50%;
-     display: flex;
-     justify-content: space-between;
    }
 
    .commands>* {
-     font-size: 9px;
-     padding-top: 25px;
+     font-size: 10px;
    }
 
    .commands>.play {
-     font-size: 18px;
-     padding-top: 15px;
+     font-size: 20px;
    }
-
 
    .playbar>.progression {
      height: 50%;
-     display: flex;
-   }
-
-   .progression>.elapsed {
-     flex: 1;
-     height: 15px;
-     font-size: 80%;
-     text-align: center;
    }
 
    .progression>.bar {
      flex: 5;
-     height: 5px;
-     margin: 2.4px 3px;
-     border-radius: 5px;
-     background-color: #535353;
-   }
-
-   .bar>.progression_elapsed {
-     width: 25%;
-     height: 100%;
-     background-color: #bababa;
-     border-radius: 5px;
-   }
-
-   .progression>.remaining {
-     flex: 1;
-     height: 15px;
-     font-size: 80%;
-     text-align: center;
    }
 
   .audio>.varie {
@@ -713,7 +682,6 @@ article > h3, article > h5{
   }
 
   .volume>.bar {
-    flex: 4;
     height: 3px;
     margin-top: 1px;
   }
