@@ -429,7 +429,7 @@ article>h5 {
         } */
 
 .now_playing>img {
-  height: 60%;
+  height: 50px;
   width: auto;
 }
 
@@ -783,7 +783,7 @@ article>h5 {
   }
 
   .now_playing>img {
-    height: 36%;
+    height: 33px;
   }
 
   .now_playing>.intestazione {
